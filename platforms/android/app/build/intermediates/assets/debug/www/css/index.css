@@ -1,0 +1,23 @@
+:root {
+    --myfilter: grayscale(0.5);
+}
+
+html,
+body {
+    margin: 0;
+}
+
+#myphoto {
+    filter: var(--myfilter);
+}
+
+#front,
+#back {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+#front{
+    display: none;
+}

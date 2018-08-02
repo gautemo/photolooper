@@ -1,0 +1,62 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\src\\main\\res\\values\\camera_theme.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "2",
+                        "startOffsets": "53",
+                        "endLines": "7",
+                        "endColumns": "10",
+                        "endOffsets": "374"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "273",
+                        "endLines": "11",
+                        "endColumns": "10",
+                        "endOffsets": "594"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "4,2,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "163,55,104",
+                        "endColumns": "63,48,58",
+                        "endOffsets": "222,99,158"
+                    },
+                    "to": {
+                        "startLines": "3,4,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "101,165,214",
+                        "endColumns": "63,48,58",
+                        "endOffsets": "160,209,268"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\src\\main\\res\\values\\camera_ids.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "2",
+                        "startOffsets": "53",
+                        "endColumns": "44",
+                        "endOffsets": "95"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "45",
+                        "endOffsets": "96"
+                    }
+                }
+            ]
+        }
+    ]
+}
