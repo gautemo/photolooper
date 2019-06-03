@@ -1,24 +1,27 @@
 {
-  "_from": "git+https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git",
-  "_id": "cordova-plugin-camera-preview@0.10.0",
+  "_from": "cordova-plugin-camera-preview",
+  "_id": "cordova-plugin-camera-preview@0.11.0",
   "_inBundle": false,
-  "_integrity": "",
+  "_integrity": "sha512-n/SGWCkaIHWSYZMpcdf0TE9z4EJkZZKfmcK6VLMR2hQ0Pujss/mEfv9k6HbZbXbvkLcz3l7FCjaXTjtFIeBMFA==",
   "_location": "/cordova-plugin-camera-preview",
   "_phantomChildren": {},
   "_requested": {
-    "type": "git",
-    "raw": "https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git",
-    "rawSpec": "https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git",
-    "saveSpec": "git+https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git",
-    "fetchSpec": "https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git",
-    "gitCommittish": null
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-camera-preview",
+    "name": "cordova-plugin-camera-preview",
+    "escapedName": "cordova-plugin-camera-preview",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "git+https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git#bb82ece84289afed18983ca01233c233d37a1fdb",
-  "_spec": "https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-camera-preview/-/cordova-plugin-camera-preview-0.11.0.tgz",
+  "_shasum": "25810df1ae0e81a26c862c9cba5ebdef02eb6ee0",
+  "_spec": "cordova-plugin-camera-preview",
   "_where": "C:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app",
   "author": {
     "name": "Weston Ganger",
@@ -29,9 +32,7 @@
     "url": "https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview/issues"
   },
   "bundleDependencies": false,
-  "dependencies": {
-    "cordova": "*"
-  },
+  "dependencies": {},
   "deprecated": false,
   "description": "Cordova plugin that allows camera interaction from HTML code for showing camera preview below or on top of the HTML.",
   "devDependencies": {},
@@ -57,5 +58,5 @@
     "url": "git+https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git"
   },
   "typings": "typescript/CameraPreview.d.ts",
-  "version": "0.10.0"
+  "version": "0.11.0"
 }

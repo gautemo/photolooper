@@ -28,6 +28,7 @@
 - (void) setPreviewSize: (CDVInvokedUrlCommand*)command;
 - (void) switchCamera:(CDVInvokedUrlCommand*)command;
 - (void) takePicture:(CDVInvokedUrlCommand*)command;
+- (void) takeSnapshot:(CDVInvokedUrlCommand*)command;
 - (void) setColorEffect:(CDVInvokedUrlCommand*)command;
 - (void) getSupportedPictureSizes:(CDVInvokedUrlCommand*)command;
 - (void) getSupportedFlashModes:(CDVInvokedUrlCommand*)command;
@@ -45,5 +46,6 @@
 @property (nonatomic) CameraSessionManager *sessionManager;
 @property (nonatomic) CameraRenderController *cameraRenderController;
 @property (nonatomic) NSString *onPictureTakenHandlerId;
+@property (nonatomic) BOOL storeToFile;
 
 @end

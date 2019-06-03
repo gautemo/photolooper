@@ -4,7 +4,7 @@ ADDED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\
 INJECTED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
 INJECTED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
 INJECTED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
-MERGED from [com.android.support:exifinterface:25.4.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-25.4.0.aar\89b586bf113cdcaea0dcad9a21cdce92\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\e4f436fc181d8983a5c242e5e99fd620\AndroidManifest.xml:17:1-28:12
 MERGED from [:CordovaLib] C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:20:1-27:12
 INJECTED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
 INJECTED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-18:12
@@ -45,8 +45,8 @@ ADDED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\
 		ADDED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
 application
 ADDED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\app\src\main\AndroidManifest.xml:5:5-13:19
-MERGED from [com.android.support:exifinterface:25.4.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-25.4.0.aar\89b586bf113cdcaea0dcad9a21cdce92\AndroidManifest.xml:22:5-26:19
-MERGED from [com.android.support:exifinterface:25.4.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-25.4.0.aar\89b586bf113cdcaea0dcad9a21cdce92\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\e4f436fc181d8983a5c242e5e99fd620\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\e4f436fc181d8983a5c242e5e99fd620\AndroidManifest.xml:22:5-26:19
 	android:supportsRtl
 		ADDED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\app\src\main\AndroidManifest.xml:5:114-140
 	android:label
@@ -91,8 +91,8 @@ ADDED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\
 		ADDED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\app\src\main\AndroidManifest.xml:12:19-79
 uses-sdk
 ADDED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\app\src\main\AndroidManifest.xml:14:5-74
-MERGED from [com.android.support:exifinterface:25.4.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-25.4.0.aar\89b586bf113cdcaea0dcad9a21cdce92\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:exifinterface:25.4.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-25.4.0.aar\89b586bf113cdcaea0dcad9a21cdce92\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\e4f436fc181d8983a5c242e5e99fd620\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:26.1.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\e4f436fc181d8983a5c242e5e99fd620\AndroidManifest.xml:20:5-44
 MERGED from [:CordovaLib] C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
 MERGED from [:CordovaLib] C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\CordovaLib\build\intermediates\manifests\full\debug\AndroidManifest.xml:25:5-44
 	android:targetSdkVersion
@@ -114,8 +114,8 @@ ADDED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\
 	android:name
 		ADDED from C:\Users\golsen\Development\Egenutvikling\photo-looper-app\platforms\android\app\src\main\AndroidManifest.xml:17:22-62
 meta-data#android.support.VERSION
-ADDED from [com.android.support:exifinterface:25.4.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-25.4.0.aar\89b586bf113cdcaea0dcad9a21cdce92\AndroidManifest.xml:23:9-25:38
+ADDED from [com.android.support:exifinterface:26.1.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\e4f436fc181d8983a5c242e5e99fd620\AndroidManifest.xml:23:9-25:38
 	android:value
-		ADDED from [com.android.support:exifinterface:25.4.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-25.4.0.aar\89b586bf113cdcaea0dcad9a21cdce92\AndroidManifest.xml:25:13-35
+		ADDED from [com.android.support:exifinterface:26.1.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\e4f436fc181d8983a5c242e5e99fd620\AndroidManifest.xml:25:13-35
 	android:name
-		ADDED from [com.android.support:exifinterface:25.4.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-25.4.0.aar\89b586bf113cdcaea0dcad9a21cdce92\AndroidManifest.xml:24:13-51
+		ADDED from [com.android.support:exifinterface:26.1.0] C:\Users\golsen\.gradle\caches\transforms-1\files-1.1\exifinterface-26.1.0.aar\e4f436fc181d8983a5c242e5e99fd620\AndroidManifest.xml:24:13-51

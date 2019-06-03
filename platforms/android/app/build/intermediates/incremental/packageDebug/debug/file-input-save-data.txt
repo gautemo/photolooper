@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Aug 02 12:40:46 CEST 2018
+#Mon Jun 03 09:39:23 CEST 2019
 25.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-xhdpi-v4\\icon.png
 25.base=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 22.set=ASSET
@@ -21,7 +21,7 @@ count=35
 0.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-hdpi-v4\\screen.png
 0.base=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 21.set=ANDROID_RESOURCE
-20.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-xhdpi-v4\\screen.png
+20.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-xxhdpi-v4\\screen.png
 7.set=ASSET
 20.base=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 10.set=ANDROID_RESOURCE
@@ -39,7 +39,7 @@ count=35
 1.base=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 1.set=ASSET
 31.set=ASSET
-21.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-xxhdpi-v4\\screen.png
+21.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-port-xhdpi-v4\\screen.png
 21.base=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 20.set=ANDROID_RESOURCE
 32.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\mipmap-ldpi-v4\\icon.png
@@ -52,7 +52,7 @@ count=35
 17.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\cordova-js-src\\exec.js
 25.set=ANDROID_RESOURCE
 17.base=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug
-10.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-land-xxxhdpi-v4\\screen.png
+10.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-land-mdpi-v4\\screen.png
 28.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\AndroidManifest.xml
 10.base=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 28.base=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
@@ -71,7 +71,7 @@ count=35
 18.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-land-ldpi-v4\\screen.png
 9.base=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug
 18.base=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
-11.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-land-mdpi-v4\\screen.png
+11.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-land-xxxhdpi-v4\\screen.png
 29.file=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug\\www\\cordova-js-src\\plugin\\android\\app.js
 11.base=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 29.base=C\:\\Users\\golsen\\Development\\Egenutvikling\\photo-looper-app\\platforms\\android\\app\\build\\intermediates\\assets\\debug

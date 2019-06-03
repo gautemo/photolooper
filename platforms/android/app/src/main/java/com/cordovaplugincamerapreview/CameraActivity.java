@@ -48,12 +48,15 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Arrays;
+import java.util.UUID;
 
 public class CameraActivity extends Fragment {
 
   public interface CameraPreviewListener {
     void onPictureTaken(String originalPicture);
     void onPictureTakenError(String message);
+    void onSnapshotTaken(String originalPicture);
+    void onSnapshotTakenError(String message);
     void onFocusSet(int pointX, int pointY);
     void onFocusSetError(String message);
     void onBackButton();
@@ -415,7 +418,11 @@ public class CameraActivity extends Fragment {
     // Create the cache directory if it doesn't exist
     cache.mkdirs();
     return cache.getAbsolutePath();
-}
+  }
+
+  private String getTempFilePath() {
+    return getTempDirectoryPath() + "/cpcp_capture_" + UUID.randomUUID().toString().replace("-", "").substring(0, 8) + ".jpg";
+  }
 
   PictureCallback jpegPictureCallback = new PictureCallback(){
     public void onPictureTaken(byte[] data, Camera arg1){
@@ -452,7 +459,7 @@ public class CameraActivity extends Fragment {
 
           eventListener.onPictureTaken(encodedImage);
         } else {
-          String path = getTempDirectoryPath() + "/capture.jpg";
+          String path = getTempFilePath();
           FileOutputStream out = new FileOutputStream(path);
           out.write(data);
           out.close();
@@ -544,6 +551,79 @@ public class CameraActivity extends Fragment {
     }
     Log.d(TAG, "CameraPreview optimalPictureSize " + size.width + 'x' + size.height);
     return size;
+  }
+  static byte[] rotateNV21(final byte[] yuv,
+                           final int width,
+                           final int height,
+                           final int rotation)
+  {
+    if (rotation == 0) return yuv;
+    if (rotation % 90 != 0 || rotation < 0 || rotation > 270) {
+      throw new IllegalArgumentException("0 <= rotation < 360, rotation % 90 == 0");
+    }
+
+    final byte[]  output    = new byte[yuv.length];
+    final int     frameSize = width * height;
+    final boolean swap      = rotation % 180 != 0;
+    final boolean xflip     = rotation % 270 != 0;
+    final boolean yflip     = rotation >= 180;
+
+    for (int j = 0; j < height; j++) {
+      for (int i = 0; i < width; i++) {
+        final int yIn = j * width + i;
+        final int uIn = frameSize + (j >> 1) * width + (i & ~1);
+        final int vIn = uIn       + 1;
+
+        final int wOut     = swap  ? height              : width;
+        final int hOut     = swap  ? width               : height;
+        final int iSwapped = swap  ? j                   : i;
+        final int jSwapped = swap  ? i                   : j;
+        final int iOut     = xflip ? wOut - iSwapped - 1 : iSwapped;
+        final int jOut     = yflip ? hOut - jSwapped - 1 : jSwapped;
+
+        final int yOut = jOut * wOut + iOut;
+        final int uOut = frameSize + (jOut >> 1) * wOut + (iOut & ~1);
+        final int vOut = uOut + 1;
+
+        output[yOut] = (byte)(0xff & yuv[yIn]);
+        output[uOut] = (byte)(0xff & yuv[uIn]);
+        output[vOut] = (byte)(0xff & yuv[vIn]);
+      }
+    }
+    return output;
+  }
+  public void takeSnapshot(final int quality) {
+    mCamera.setPreviewCallback(new Camera.PreviewCallback() {
+      @Override
+      public void onPreviewFrame(byte[] bytes, Camera camera) {
+        try {
+          Camera.Parameters parameters = camera.getParameters();
+          Camera.Size size = parameters.getPreviewSize();
+          int orientation = mPreview.getDisplayOrientation();
+          if (mPreview.getCameraFacing() == Camera.CameraInfo.CAMERA_FACING_FRONT) {
+            bytes = rotateNV21(bytes, size.width, size.height, (360 - orientation) % 360);
+          } else {
+            bytes = rotateNV21(bytes, size.width, size.height, orientation);
+          }
+          // switch width/height when rotating 90/270 deg
+          Rect rect = orientation == 90 || orientation == 270 ?
+            new Rect(0, 0, size.height, size.width) :
+            new Rect(0, 0, size.width, size.height);
+          YuvImage yuvImage = new YuvImage(bytes, parameters.getPreviewFormat(), rect.width(), rect.height(), null);
+          ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+          yuvImage.compressToJpeg(rect, quality, byteArrayOutputStream);
+          byte[] data = byteArrayOutputStream.toByteArray();
+          byteArrayOutputStream.close();
+          eventListener.onSnapshotTaken(Base64.encodeToString(data, Base64.NO_WRAP));
+        } catch (IOException e) {
+          Log.d(TAG, "CameraPreview IOException");
+          eventListener.onSnapshotTakenError("IO Error");
+        } finally {
+
+          mCamera.setPreviewCallback(null);
+        }
+      }
+    });
   }
 
   public void takePicture(final int width, final int height, final int quality){
